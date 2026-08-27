@@ -1,0 +1,117 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../../img/Nature2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container h1 {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 10%;
+    margin-top: 15px; 
+}
+
+.container {
+    border: 2px solid brown;
+    width: 410px;
+    height: auto;
+    border-radius: 20px;
+    padding: 30px 40px;
+    color: white;
+}
+
+.input-user {
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-user input {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border-color: brown;
+    color: white;
+    box-shadow: 0 0 15px white;
+    background-color: transparent;
+    padding: 20px 45px 20px 20px;
+    outline: none;
+}
+
+.input-user input::placeholder {
+    color: white;
+}
+
+.div-lembrar-senha {
+    position: relative;
+    margin: -15px 0 15px;
+}
+
+.div-lembrar-senha label {
+    cursor: pointer;
+}
+
+.div-lembrar-senha a {
+    color: white;
+    text-decoration: none;
+    position: Absolute;
+    right: 0px;
+}
+
+.div-lembrar-senha a:hover {
+    text-decoration: underline;
+}
+
+.div-lembrar-senha label input {
+    accent-color: white;
+    margin-right: 5px;
+}
+
+button {
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 40px;
+    color: black;
+    background-color: white;
+    border: none;
+    font-weight: 600px;
+    font-size: 16px;
+    box-shadow: 0 0 15px white;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: transparent;
+    border: 1px solid brown;
+    transition: 0.9s;
+    color: white;
+}
+
+.registro {
+    text-align: center;
+    font-size: 14px;
+    margin: 20px 0 15px;
+}
+
+.registro a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500px;
+}
+
+.registro a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}

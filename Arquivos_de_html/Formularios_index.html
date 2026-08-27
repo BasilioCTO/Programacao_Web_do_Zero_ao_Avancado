@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+
+<body>
+    <h1>Formularios</h1><br>
+    <p>Nesta aula do nosso curso de HTML completo vamos aprender como usar os formulários. Os formulários HTML são muito
+        importantes por que é com eles que você recebe entrada de dados. Praticamente tudo o que você utiliza na
+        programação web depende de formulários.
+    </p><br>
+    <form>
+        <label for="campo_nome">Nome:</label>
+        <input id="campo_nome" type="text" placeholder="Digite o seu nome" required><br><br>
+
+        <label for="campo_senha">Senha:</label>
+        <input id="campo_senha" type="password" placeholder="Digite uma senha" required><br><br>
+
+        <label for="campo_email">Email:</label>
+        <input id="campo_email" type="email" placeholder="Digite o seu email" required><br><br>
+
+        <input type="submit" value="Enviar formulário" required><br><br><br>
+
+        <!--RADIO SERVE PRA UMA UNICA ESCOLHA
+        O name=" " DO RADIO DEVE SEMPRE SER UNICO PRA FUNCIONAR-->
+
+        <h2>Como o clima está ?</h2>
+        <input type="radio" name="clima" id="Solarado" value="Solarado" required>
+        <label for="Solarado">Solarado</label><br>
+
+        <input type="radio" name="clima" id="Chuvoso" value="Chuvoso" required>
+        <label for="Chuvoso">Chuvoso</label><br>
+
+        <input type="radio" name="clima" id="Nublado" value="Nublado" required>
+        <label for="Nublado">Nublado</label><br><br>
+
+        <!--CHECKBOX SERVE PRA MULTIPLAS ESCOLHAS
+        O name=" " DO CHECKBOX DEVE SER SEMPRE DIFERENTE PRA FUNCIONAR-->
+        <h2>O que devo levar ?</h2>
+        <input type="checkbox" name="item1" value="Guarda_Chuva" id="Guarda_Chuva">
+        <label for="item1">Guarda_Chuva</label><br>
+
+        <input type="checkbox" name="item2" value="Chapeu" id="Chapeu">
+        <label for="item2">Chapeu</label><br>
+
+        <input type="checkbox" name="item3" value="Jaqueta" id="Jaqueta">
+        <label for="item3">Jaqueta</label><br>
+
+        <!--SOBRE O SELECT
+        DIFERENTE DO INPUT, ELE SERVE PRA SELECIONAR ALGUNS ITEM DE UM UM CONJUNTO-->
+        <h2>Escolha uma cor</h2>
+        <select name="Cores">
+            <option selected disabled value="">Selecione uma cor</option>
+            <option value="Black">Black</option>
+            <option value="Red">Red</option>
+            <option value="Blue">Blue</option>
+        </select><br><br>
+
+        <!--SOBRE O TEXTAREA
+        ELE SERVE PRA ABRIR UM CAMPO DE TEXTO MAIOR-->
+        <h2>Escreva o que quiseres</h2><br>
+        <textarea placeholder="Digite qualquer coisa" name="texto" id="texto" rows="15" cols="55"></textarea><br><br>
+
+        <button style="color: aqua;">clique aqui</button>
+    </form>
+
+</body>
+
+</html>
