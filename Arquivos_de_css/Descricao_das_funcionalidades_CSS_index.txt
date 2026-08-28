@@ -311,9 +311,6 @@
    float:none — o elemento mantém o fluxo normal. (valor padrão)
    inline-start e inline-end (para escrita horizontal LTR/RTL em CSS moderno).
 
-* TIRA A ESTILIZAÇÃO DA LISTA *
-   list-style-type: none;
-
 15ª EFEITO GRADIENTE *
    background-image: linear-gradient(cor1(topo), cor2(baixo))
    background-image: linear-gradient(to right cor1(topo), cor2(baixo)) da esquerda pra direita.
@@ -440,6 +437,7 @@
       transform: ; move os elemntos ou aplica animação nos elementos
       transition: 0s até +; Trata da velocidade da mudança de cor ou etc dos elementos
       backdrop-fiter: blur(px) Parece que torna meio transparente
+      list-style-type: none; Tira a estilização das listas.
 
       transform: translateX(px); movome pra o eixo horizontal + transition: segundos s ex: 2s
       transform: translateY(px); movome pra o eixo vertical
