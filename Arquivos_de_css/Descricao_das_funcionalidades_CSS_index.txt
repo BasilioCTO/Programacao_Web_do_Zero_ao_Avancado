@@ -440,10 +440,74 @@
       list-style-type: none; Tira a estilização das listas.
 
       transform: translateX(px); movome pra o eixo horizontal + transition: segundos s ex: 2s
-      transform: translateY(px); movome pra o eixo vertical
+      transform: translateY(px); movome pra o eixo vertical, valor positivo move pra baixo e negativo move pra cima.
       transform: rotate(numero+deg); movome de maneira circular
       transform: rotateX(numero+deg); gira na parte horizontal de maneira circular
       transform: rotateY(numero+deg); gira na parte vertical de maneira circular
-      transform: scale(1 até +); estica o elemento de todas as partes
+      transform: scale(1 até +); estica o elemento de todas as partes, com scale(largura, altura);
       transform: scaleX(1 até +); estica o elemento na parte horizontal
       transform: scaleY(1 até +); estica o elemento na parte vertical
+
+      transform: translate(valordeX, valordeY)
+
+      O all faz com que todos que tiverem a propriedade tenham a mesma caracteristica:
+      ex.: transition: all 0.3s; todos que tiverem o transition terão o mesmo tempo de duração.
+
+      «««««««««««««««««««««««««««««««««««
+      Se no transition colocar um desses:
+      »»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»
+      ANIMAÇÔES
+      ease; a transição começadevagar depois acelera e depois desacelera
+      linea; do inico ao fim vai com a mesma veloidade
+      ease-in; começa devagar e termina mais rapido
+      ease-out; começa mais rapido e termina devagar
+      ease-in-out; começa devagar acelera no meio e desacelera no final
+
+      «««««««««
+      steps
+
+      Essa propriedade quebra a animação em partes
+      steps(1 até +); isso cocola-se dentro do transition
+      «««««««««
+
+      ««««««««««««
+      cubic-bezier
+
+      Ele cria um efeito de animação melhor que o steps, ele cria um efeito de transição em partes
+      Tambem coloca-se dentro do transition:
+      cubic-bezier(4 à 6 valores decimais ou não)
+      »»»»»»»»»»»»
+
+      Skew(); coloca-se dentro do transform e ele estic o elemento na obliqua no eixo em que está
+      SkewX(valor deg); deforma o elemento horizontalme
+      SkewY(valor deg); deforma o elemento verticalmente
+
+      ------------------
+      :ROOT{}
+      ------------------
+      :root{} : No CSS, :root é uma pseudoclasse que representa o elemento raiz de um documento HTML, que é quase sempre a tag <html>.
+
+      Na prática, ele tem uma função muito parecida com o seletor html, mas com uma grande vantagem: ele possui uma especificidade maior, o que significa que regras aplicadas nele têm preferência sobre regras aplicadas diretamente em html.
+
+      Para que ele é mais usado?
+      Hoje em dia, o uso mais comum do :root é para definir variáveis CSS globais (também chamadas de Custom Properties). Como o :root está no topo da árvore de elementos do documento, qualquer variável declarada nele fica acessível em qualquer lugar da sua página.
+
+      para manter a porpoção das formas dentro do site e manter a responsividade, coloca-se:
+      width: ; a tua escolha, mas no lugar da altura coloca-se um aspect-ratio: valor1 / valor2
+      ex.: width: 300px; aspect-ratio: 1/1 quadrado, ou aspect-ratio:  3/2 retangulo.
+
+      clamp(valor minimo, ideal vw, maximo) funciona com width, height, font-size etc...
+
+      -------------------------------------------
+      COmo dar aquele efeito de luz de festa kkkk:
+
+         @keyframes animate {
+               100% {
+                  filter: hue-rotate(360deg);
+               }
+            }
+
+         .container:hover {
+            animation: animate 1s linear infinite;
+         }
+      -------------------------------------------
