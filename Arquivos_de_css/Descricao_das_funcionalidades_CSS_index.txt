@@ -95,7 +95,7 @@
    * background-color: cor; cor solida de fundo
 
    * background-image: tem vários atributos;
-      background-image: url(caminho da imagem); serve pra colocar uma imagem como fundo de uma div, tex, body, etc...
+      background-image: url(caminho da imagem); serve pra colocar uma imagem como fundo de uma div, texto, body, etc...
 
    * background-size: Tem 2 atributos;
       contain e cover:
@@ -436,7 +436,7 @@
    * EFEITOS DE MOVIMENTO DE DIV OU ELEMENTO *
       transform: ; move os elemntos ou aplica animação nos elementos
       transition: 0s até +; Trata da velocidade da mudança de cor ou etc dos elementos
-      backdrop-fiter: blur(px) Parece que torna meio transparente
+      backdrop-filter: blur(px) Parece que torna meio transparente
       list-style-type: none; Tira a estilização das listas.
 
       transform: translateX(px); movome pra o eixo horizontal + transition: segundos s ex: 2s

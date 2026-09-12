@@ -136,16 +136,6 @@ body {
     }
 }
 
-@keyframes animate {
-    100% {
-        filter: hue-rotate(360deg);
-    }
-}
-
-.container-login:hover {
-    animation: animate 2s linear infinite;
-}
-
 .container-login:hover {
     box-shadow: 0 0 20px 5px aqua;
     transition: 0.8s;
